@@ -5,6 +5,9 @@ const mensaje = document.querySelector("#mensaje");
 const btnSubmit = document.querySelector('#submit');
 const formulario = document.querySelector('#formu');
 const spinner = document.querySelector('#spinner');
+const cont = document.querySelector('#cont');
+const abrir = document.querySelector('#abrir');
+const cerrar = document.querySelector('#cerrar');
 
 const datos = {
     nombre: '',
@@ -18,6 +21,14 @@ apellido.addEventListener('input', validar);
 email.addEventListener('input', validar);
 mensaje.addEventListener('input', validar);
 formulario.addEventListener('submit', enviarEmail);
+
+abrir.addEventListener("click", () => {
+    cont.classList.add('ver');
+})
+
+cerrar.addEventListener('click', () => {
+    cont.classList.remove('ver');
+})
 
 function validar(e) {
     limpiarAlerta(e.target.parentElement);
@@ -48,7 +59,6 @@ function limpiarAlerta(referencia) {
     if(alerta) {
         alerta.remove();
     }
-    comprobarEmail();
 }
 
 function validarEmail(email) {
@@ -84,7 +94,7 @@ function enviarEmail(e) {
 
         setTimeout(() => {
             mensajeExito.remove();
-        }, 10000);
+        }, 3000);
 
         formulario.reset();
 

@@ -237,7 +237,7 @@ span {
     border-radius: 25rem;
     height: 28rem;
     width: 28rem;
-    border: 2px solid #ee9330 ;
+    border: 3px solid #ee9330;;
 }
 
 @media (max-width: 768px) {
@@ -252,7 +252,7 @@ span {
 .color-seccion {
     height: 47rem;
     margin: auto auto auto auto;
-    background-color: rgb(85, 82, 82);
+    background-color: #555252;
     max-width: 100%;
 }
 

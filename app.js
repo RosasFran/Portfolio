@@ -31,7 +31,7 @@ cerrar.addEventListener('click', () => {
 })
 
 function validar(e) {
-
+    limpiarAlerta(e.target.parentElement);
     if(e.target.value.trim() === '') {
         mostrarAlerta(`El campo ${e.target.id} es obligatorio`, e.target.parentElement);
         datos[e.target.name] = '';
@@ -44,7 +44,6 @@ function validar(e) {
         comprobarEmail();
         return;
     }
-    limpiarAlerta(e.target.parentElement);
     datos[e.target.name] = e.target.value.trim().toLowerCase();
     comprobarEmail();
 

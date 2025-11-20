@@ -184,7 +184,7 @@ span {
 
 @media (max-width:768px) {
     .contenedor-tit-parr {
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
 }
 
@@ -215,7 +215,6 @@ span {
     .parrafo-presentacion {
         font-size: 1.8rem;
         width: 100%;
-        padding-bottom: 2rem;
         text-align: center;
     }
 }
